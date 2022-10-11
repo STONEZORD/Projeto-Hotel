@@ -1,0 +1,127 @@
+* {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  min-height: 600px;
+  color: white;
+  background: url("./imagens/praia.jpg");
+  background-repeat: no-repeat; /*não repete a imagem*/
+  background-size: cover; /*cobrir toda a área que previsa*/
+  background-position: center; /*centralizar a imagem*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 50px;
+
+}
+
+.button {
+  padding: 10px 40px;
+  padding-top: 10px;
+  cursor: pointer; /*mouse em cima mostra o click*/
+  background-color: transparent; /*deixa o botao transparente*/
+  color: white;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  border: 2px solid white; /*cor da borda*/
+  transition: all 0.25s ease-out;
+}
+
+.button-space {
+  margin-top: 40px;
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.button-primary {
+  color: #00a7ef;
+  border: 2px solid #00a7ef;
+}
+
+.button-primary:hover {
+  background-color: rgba(0, 167, 238, 0.2);
+}
+.city {
+  display: flex;
+  width: 100%; 
+}
+
+.item-flex-50 {
+  flex-basis: 50%; /* tamanho da div em 50% */
+}
+
+.city-img {
+  width: 100%;
+  object-fit: cover;
+  
+}
+
+h2 {
+  font-size: 40px ;
+  font-weight: bold;
+}
+
+.city-content {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+}
+
+.city-text {
+  padding: 40px 0;
+}
+
+.services {
+  padding: 40px;
+}
+
+.container {
+  max-width: auto;
+  margin: 0 auto;
+
+}
+
+
+.services-content {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+
+.services-card {
+  background-color: #00a7ef;
+
+}
+
+.services-text {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+.services-img {
+  width: 100%;
+  width: 576px;
+  height: 768px;
+}
+@media (max-width: 768px) {
+  .city {
+  flex-direction: column-reverse;  
+  }
+}
